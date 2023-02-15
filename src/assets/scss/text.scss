@@ -1,0 +1,57 @@
+@import './color.scss';
+@import './font.scss';
+
+.app-title-text {
+    font-family: $MONUMENT_VALLEY;
+}
+
+.menu-text {
+    font-family: $LUCIDA_SANS;
+    color: $BLACK !important;
+    text-decoration: none !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: small !important;
+}
+
+.menu-text:hover {
+    text-decoration: underline !important;
+}
+
+.title-text {
+    font-family: $MONUMENT_VALLEY;
+}
+
+.subtitle-text {
+    font-family: $MONUMENT_VALLEY;
+}
+
+.body-text {
+    font-family: $MONUMENT_VALLEY;
+    text-align: justify;
+}
+
+.caption-text {
+    font-family: $MONUMENT_VALLEY;
+}
+
+.quote-text {
+    font-family: $MONUMENT_VALLEY;
+}
+
+.item-text {
+    font-family: $LUCIDA_SANS;
+}
+
+.last-post-title-text {
+    font-family: $MONUMENT_VALLEY;
+    font-size: xx-large;
+}
+
+.last-post-body-text {
+    font-family: $MONUMENT_VALLEY;
+}
+
+.last-post-item-text {
+    font-family: $LUCIDA_SANS;
+}

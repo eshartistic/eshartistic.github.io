@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg bg-white fixed-top p-0">
+    <div class="container-fluid d-inline">
+        <div class="row border-bottom border-light primary-navbar-height">
+            <div class="col-4 d-flex justify-content-start align-items-center">
+                <div class="dropdown">
+                    <button class="navbar-toggler p-1 rounded-0" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                    </button>
+
+                    <ul class="dropdown-menu rounded-0 border-0 shadow-sm" aria-labelledby="dropdownMenuButton">
+                        <li *ngFor="let page of pages" class="nav-item mt-4 mb-4">
+                            <a routerLink="{{page.getRouterLink()}}" (click)="onClickMenuItem(page.getRouterLink())"
+                                class="menu-text nav-link dropdown-item">
+                                <i class="{{page.getIcon()}} me-3"></i>
+                                {{page.getTitle()}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <p class="text-center site-name-font mb-0">ESHARTISTIC</p>
+            </div>
+
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <div class="d-none d-sm-block">
+                    <span class="icon-button" onclick="location='https\://facebook.com'">
+                        <i class="bi bi-facebook"></i>
+                    </span>
+
+                    <span class="icon-button" onclick="location='https\://instagram.com'">
+                        <i class="bi bi-instagram"></i>
+                    </span>
+
+                    <span class="icon-button" onclick="location='https\://pinterest.com'">
+                        <i class="bi bi-pinterest"></i>
+                    </span>
+
+                    <span class="icon-button me-5" onclick="location='https\://youtube.com'">
+                        <i class="bi bi-youtube"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row secondary-navbar-height collapse navbar-collapse d-none d-sm-block">
+            <ul class="navbar-nav col d-flex justify-content-center align-items-center w-100">
+                <li *ngFor="let page of pages" class="nav-item">
+                    <a routerLink="{{page.getRouterLink()}}" (click)="onClickMenuItem(page.getRouterLink())"
+                        class="menu-text nav-link">{{page.getTitle()}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

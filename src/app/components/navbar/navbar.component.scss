@@ -1,0 +1,34 @@
+//Custom
+.site-name-font {
+    font-family: 'MonumentValley';
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.icon-button {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.primary-navbar-height {
+    height: 70px;
+}
+
+.secondary-navbar-height {
+    height: 40px;
+}
+
+//Overrided Bootstrap Class
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.dropdown-menu {
+    top: 40px !important;
+    width: 47vw !important;
+}
+
+.dropdown-item {
+    font-family: Arial;
+    color: #555;
+}
