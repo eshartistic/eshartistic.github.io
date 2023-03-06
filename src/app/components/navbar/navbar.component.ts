@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouteHandlerService } from 'src/app/services/route-handler.service';
-import { AppConstants } from 'src/utils/appConstants';
+import { AppConstants } from 'src/utils/AppConstants';
 import { Page } from 'src/utils/models/page';
 
 @Component({

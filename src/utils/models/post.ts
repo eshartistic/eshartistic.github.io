@@ -1,50 +1,82 @@
 export class Post {
 
     constructor(
-        private timestamp: Date = new Date(),
-        private type: string = "",
-        private title: string = "",
-        private description: string = "",
-        private photos: string[] = []
-    ) { }
-
-    setTimestamp(timestamp: Date) {
-        this.timestamp = timestamp;
+        private _timestamp: Date = new Date(),
+        private _type: string = "",
+        private _title: string = "",
+        private _description: string = "",
+        private _status: string = "",
+        private _thumbnail: string = "",
+        private _coverPhoto: string = "",
+        private _photos: string[] = []
+    ) {
     }
 
-    getTimestamp(): Date {
-        return this.timestamp;
+    get timestamp(): Date {
+        return this._timestamp;
     }
 
-    setType(type: string) {
-        this.type = type;
+    set timestamp(value: Date) {
+        this._timestamp = value;
     }
 
-    getType(): string {
-        return this.type;
+    get type(): string {
+        return this._type;
     }
 
-    setTitle(title: string) {
-        this.title = title;
+    set type(value: string) {
+        this._type = value;
     }
 
-    getTitle(): string {
-        return this.title;
+    get title(): string {
+        return this._title;
     }
 
-    setDescription(description: string) {
-        this.description = description;
+    set title(value: string) {
+        this._title = value;
     }
 
-    getDescription(): string {
-        return this.description;
+    get description(): string {
+        return this._description;
     }
 
-    setPhotos(photos: string[]) {
-        this.photos = photos;
+    set description(value: string) {
+        this._description = value;
     }
 
-    getPhotos(): string[] {
-        return this.photos;
+    get status(): string {
+        return this._status;
+    }
+
+    set status(value: string) {
+        this._status = value;
+    }
+
+    get thumbnail(): string {
+        return this._thumbnail;
+    }
+
+    set thumbnail(value: string) {
+        this._thumbnail = value;
+    }
+
+    get coverPhoto(): string {
+        return this._coverPhoto;
+    }
+
+    set coverPhoto(value: string) {
+        this._coverPhoto = value;
+    }
+
+    get photos(): string[] {
+        return this._photos;
+    }
+
+    set photos(value: string[]) {
+        this._photos = value;
+    }
+
+    public addPhotos(url: string) {
+        this._photos.push(url);
     }
 }
