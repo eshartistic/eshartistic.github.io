@@ -1,0 +1,18 @@
+$BLACK: black;
+$WHITE: white;
+
+.is-black {
+    color: $BLACK;
+}
+
+.is-white {
+    color: $WHITE;
+}
+
+.is-bg-black {
+    background-color: $BLACK;
+}
+
+.is-bg-white {
+    background-color: $WHITE;
+}
